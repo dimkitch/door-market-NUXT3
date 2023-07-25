@@ -1,0 +1,29 @@
+* {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+  }
+  
+  .container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: $container-desktop;
+    padding: 0 $container-gap;
+  }
+  
+  body {
+    font-family: $font-base;
+    font-size: $font-size-main-text;
+    font-weight: $font-weight-main-text;
+    line-height: $font-lh-main-text;
+    color: $color-dark;
+    background-color: $color-white;
+  }
+  
+  h1,h2,h3,h4,h5,h6 {
+    font-family: $font-title;
+    text-transform: uppercase;
+  }
+  
+  
