@@ -83,6 +83,16 @@
   
 // Классы для цвета текста
 .color {
+  
+  // .color-white
+  &-white {
+    color: $color-white;
+  }
+
+  // .color-warning-light
+  &-warning-light {
+    color:$color-warning-light;
+  }
 }
 
 // Helpers
@@ -91,5 +101,19 @@
   $fw: calc($i * 100);
   .fw-#{$fw} {
     font-weight: #{$fw};
+  }
+}
+// text-transform
+.tt-uppercase {
+  text-transform: uppercase;
+}
+
+// link
+.link {
+  cursor: pointer;
+  transition: $transition-mod;
+
+  &:hover {
+    color: $color-warning-light;
   }
 }

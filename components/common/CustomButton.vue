@@ -46,33 +46,40 @@ $b: '.custom-button';
   &:hover{
     background-color: $color-warning-muddy;
   }
+
   &:disabled{
     opacity: 50%;
   }
+
+  // .custom-button--xs
+  &--xs {
+    padding: 11px 29px;
+  }
+
   // .custom-button--sm
-  &--sm{
+  &--sm {
     padding: 20px 25px;
   }
 
   // .custom-button--md
-  &--md{
+  &--md {
       padding: 20px 70px;
   }
 
   // .custom-button--transparent
-  &--transparent{
+  &--transparent {
   font-weight: 700;
     padding: 20px 70px;
     color: $color-warning;
     
-    &:hover{
+    &:hover {
         text-decoration: underline;  
         background-color: transparent;
     }
   }
 
   // .custom-button--warning-deep
-  &--warning-deep{
+  &--warning-deep {
     background-color: $color-warning-deep;
   }
 }

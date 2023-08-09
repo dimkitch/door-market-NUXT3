@@ -1,6 +1,7 @@
 export enum CustomButtonSizeSettings {
   'MD' = 'md',
   'SM' = 'sm',
+  'XS' = 'xs',
   'TRANSPARENT' = 'transparent',
 }
   

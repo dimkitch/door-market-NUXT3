@@ -10,6 +10,19 @@
     width: 100%;
     max-width: $container-desktop;
     padding: 0 $container-gap;
+
+    // @media (max-width: $breakpoint-desktop) {
+    //   max-width: $container-desktop-sm;
+    // }
+    // @media (max-width: $breakpoint-tablet) {
+    //   max-width: $container-tablet;
+    // }
+    // @media (max-width: $breakpoint-tanlet-sm) {
+    //   max-width: $container-tablet-sm;
+    // }
+    // @media (max-width: $breakpoint-mob) {
+    //   width: $container-width-mob;
+    // }
   }
   
   body {

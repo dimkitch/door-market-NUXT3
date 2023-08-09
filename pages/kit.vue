@@ -148,31 +148,31 @@
                         </template>
                         <template v-slot:body>
                             <ul>
-                                <li>1111111</li>
-                                <li>22222</li>
-                                <li>33333</li>
-                                <li>44444</li>
-                                <li>555555</li>
-                                <li>666666</li>
+                                <CustomCheckbox v-model="form.policyCheckbox">Межкомнатные</CustomCheckbox>
+                                <CustomCheckbox v-model="form.policyCheckbox">Скрытые</CustomCheckbox>
+                                <CustomCheckbox v-model="form.policyCheckbox">Скандинавский</CustomCheckbox>
+                                <CustomCheckbox v-model="form.policyCheckbox">Винтаж</CustomCheckbox>
+                                <CustomCheckbox v-model="form.policyCheckbox">Современный</CustomCheckbox>
+                                <CustomCheckbox v-model="form.policyCheckbox">Межкомнатные</CustomCheckbox>
+                                <CustomCheckbox v-model="form.policyCheckbox">Скрытые</CustomCheckbox>
                             </ul>
                         </template>
                     </Accordion>
-                    <!-- <CustomCheckbox>Межкомнатные</CustomCheckbox> -->
+                    <CustomCheckbox v-model="form.policyCheckbox">Межкомнатные</CustomCheckbox>
                 </div>
             </div>
         </div>
     </main>
 </template>
 <script setup lang="ts">
-import Accordion from '../components/common/Accordion.vue';
-import CustomCheckbox from '../components/common/CustomCheckbox.vue';
-
-
+import { reactive } from 'vue'
 const range = {
     min:0,
     max:270,
 }
-
+let form = reactive({
+        policyCheckbox: false,
+    });
 </script>
 <style lang="scss">
     .kit-page {
